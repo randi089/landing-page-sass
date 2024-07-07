@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "poppinsr";
+  src: url(../font/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "poppinsm";
+  src: url(../font/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "poppinsb";
+  src: url(../font/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: "poppinseb";
+  src: url(../font/Poppins-ExtraBold.ttf);
+}
+body {
+  font-family: "poppinsr", sans-serif;
+}
+body::before {
+  content: "";
+  background-image: url(../img/bg.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 70vmax 45vmax;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@media screen and (max-width: 992px) {
+  body::before {
+    opacity: 0.4;
+  }
+}
+
+.containerc {
+  width: 93%;
+  margin: 3em auto;
+}
+.containerc .custom-nav .navbar-brand {
+  font-family: "poppinsb";
+  letter-spacing: 2px;
+  font-size: 1.4rem;
+  color: #261A3F;
+  text-transform: uppercase;
+}
+.containerc .custom-nav .rightNav .navbar-nav .nav-item .nav-link {
+  color: #261A3F;
+  font-size: 0.9em;
+  margin-left: 5em;
+  transition: 0.3s color ease;
+}
+.containerc .custom-nav .rightNav .navbar-nav .nav-item .nav-link:hover {
+  color: #8365c0;
+}
+.containerc .custom-nav .rightNav .navbar-nav .nav-item .nav-link.aktif {
+  font-family: "poppinsb";
+  color: #261A3F;
+}
+@media screen and (max-width: 992px) {
+  .containerc .custom-nav {
+    margin-top: -1em;
+  }
+}
+
+.custom-section {
+  margin-top: 5em;
+}
+.custom-section h5 {
+  font-family: "poppinsb";
+  line-height: 1;
+}
+.custom-section h1 {
+  font-family: "poppinseb";
+  color: #8E71BF;
+  line-height: 1;
+}
+.custom-section h1 span {
+  color: #5D69BB;
+}
+.custom-section h1 span span {
+  display: block;
+}
+.custom-section p {
+  font-size: 0.8em;
+  margin: 20px 0;
+}
+.custom-section a {
+  display: inline-block;
+  color: #fff;
+  background-color: #F03C65;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  border: 1px solid #E73A62;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+.custom-section a:hover {
+  color: #E73A62;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+}
+@media screen and (max-width: 992px) {
+  .custom-section {
+    margin-top: 3em;
+    text-align: center;
+  }
+  .custom-section h5, .custom-section h1, .custom-section p {
+    text-shadow: 1px 1px 2px rgba(38, 26, 63, 0.3);
+  }
+}/*# sourceMappingURL=main.css.map */
